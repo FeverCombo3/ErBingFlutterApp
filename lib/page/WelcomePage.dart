@@ -29,7 +29,7 @@ class _WelcomePageState extends State<WelcomePage> {
     hadInit = true;
 
     new Future.delayed(const Duration(seconds: 2), () {
-      NavigatorUtils.goHome(context);
+      NavigatorUtils.goHome2(context);
     });
   }
 

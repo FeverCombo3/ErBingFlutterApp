@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_project/page/Home.dart';
 import 'package:flutter_project/page/HomePage.dart';
 import 'package:flutter_project/page/NewsDetailsPage.dart';
 import 'package:flutter_project/page/PhotoViewPage.dart';
@@ -26,6 +27,11 @@ class NavigatorUtils {
   ///主页
   static goHome(BuildContext context) {
     Navigator.pushReplacementNamed(context, HomePage.sName);
+  }
+
+  //主页2
+  static goHome2(BuildContext context) {
+    Navigator.pushReplacementNamed(context, Home.sName);
   }
 
   ///图片预览

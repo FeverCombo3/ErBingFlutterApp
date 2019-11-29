@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:flutter_project/page/Home.dart';
 import 'package:flutter_project/page/HomePage.dart';
 import 'package:flutter_project/page/WelcomePage.dart';
 import 'package:flutter_project/redux/GlobalState.dart';
@@ -29,17 +30,20 @@ class ErBingApp extends StatelessWidget{
     return new StoreProvider(
       store: store,
       child: new StoreBuilder<GlobalState>(
-          builder: (context,store){
+          builder: (context, store) {
             return new MaterialApp(
               theme: new ThemeData(
                   brightness: Brightness.light,
                   primaryColor: Colors.amberAccent),
               routes: {
-                WelcomePage.sName:(context){
+                WelcomePage.sName: (context) {
                   return WelcomePage();
                 },
-                HomePage.sName:(context){
-                  return new HomePage();
+//                HomePage.sName:(context){
+//                  return new HomePage();
+//                }
+                Home.sName: (context) {
+                  return new Home();
                 }
               },
             );
